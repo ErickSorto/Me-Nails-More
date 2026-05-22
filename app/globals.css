@@ -2476,7 +2476,7 @@ a {
 
   .hero-content {
     width: min(58vw, 230px);
-    padding: calc(var(--header-height) + 30px) var(--page-gutter) 224px;
+    padding: calc(var(--header-height) + 54px) var(--page-gutter) 200px;
   }
 
   .hero h1 {
