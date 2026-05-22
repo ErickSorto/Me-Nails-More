@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230" role="img" aria-labelledby="title desc">
+  <title id="title">Me Nails and More logo</title>
+  <desc id="desc">A pink and champagne monogram logo for Me Nails and More.</desc>
+  <defs>
+    <linearGradient id="mark" x1="106" x2="176" y1="28" y2="186" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFEAF1"/>
+      <stop offset=".46" stop-color="#D94E7D"/>
+      <stop offset="1" stop-color="#8F294D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="41" x2="216" y1="40" y2="208" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7D99F"/>
+      <stop offset=".48" stop-color="#C99A55"/>
+      <stop offset="1" stop-color="#8A5D26"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="230" rx="0" fill="none"/>
+  <g transform="translate(22 18)">
+    <path fill="none" stroke="url(#gold)" stroke-width="7" d="M101 18c44 0 80 36 80 80s-36 80-80 80-80-36-80-80 36-80 80-80Z"/>
+    <path fill="url(#mark)" d="M52 142c9-42 16-72 21-90 2-7 12-8 16-2l26 46 26-46c4-6 14-5 16 2 6 20 13 50 21 90h-26c-4-22-8-42-11-59l-18 34c-4 7-14 7-18 0L87 83c-4 17-7 37-11 59H52Z"/>
+    <path fill="#C99A55" d="M144 36c15 10 25 27 25 46 0 28-21 51-48 55 39-1 71-33 71-72 0-15-5-30-13-42-9 8-21 13-35 13Z" opacity=".34"/>
+    <path fill="#fffdfb" d="M155 50c5 7 8 15 8 25 0 20-14 37-34 41 13-12 21-29 21-48 0-6-.1-11-.3-16 1.7-.4 3.5-1 5.3-2Z" opacity=".46"/>
+  </g>
+  <g fill="#fffdfb" transform="translate(238 50)">
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="500" letter-spacing="0">Me Nails</text>
+    <text x="4" y="118" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="8">&amp; MORE</text>
+    <path fill="#C99A55" d="M148 108h258v3H148z"/>
+  </g>
+</svg>
