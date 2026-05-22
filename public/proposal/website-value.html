@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Me Nails & More Website Value</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f7dce7;
+        color: #351925;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .sheet {
+        position: relative;
+        width: 1200px;
+        min-height: 1600px;
+        overflow: hidden;
+        padding: 62px 72px 70px;
+        background:
+          radial-gradient(circle at 12% 8%, rgba(255, 245, 249, 0.94), transparent 360px),
+          radial-gradient(circle at 86% 20%, rgba(245, 211, 161, 0.58), transparent 330px),
+          linear-gradient(145deg, #fff8fb 0%, #f9dce7 48%, #fff3f7 100%);
+      }
+
+      .sheet::before {
+        position: absolute;
+        inset: 26px;
+        border: 1px solid rgba(143, 41, 77, 0.18);
+        border-radius: 30px;
+        content: "";
+        pointer-events: none;
+      }
+
+      .top {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .logo {
+        width: 330px;
+        height: auto;
+        filter: drop-shadow(0 10px 18px rgba(143, 41, 77, 0.12));
+      }
+
+      .price-tag {
+        display: grid;
+        min-width: 270px;
+        gap: 4px;
+        padding: 20px 24px;
+        border: 1px solid rgba(143, 41, 77, 0.2);
+        border-radius: 20px;
+        background: rgba(255, 253, 251, 0.68);
+        box-shadow: 0 18px 45px rgba(143, 41, 77, 0.12);
+        text-align: right;
+      }
+
+      .price-tag span {
+        color: #8f294d;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .price-tag strong {
+        color: #8f294d;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 62px;
+        line-height: 0.95;
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 318px;
+        gap: 46px;
+        align-items: end;
+        margin-top: 58px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 18px;
+        color: #8f294d;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 48px;
+        height: 2px;
+        background: linear-gradient(90deg, #8f294d, #d4a15d);
+        content: "";
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        color: #8f294d;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 78px;
+        font-weight: 560;
+        letter-spacing: 0;
+        line-height: 0.95;
+      }
+
+      .lead {
+        max-width: 790px;
+        margin: 26px 0 0;
+        color: rgba(53, 25, 37, 0.76);
+        font-size: 31px;
+        font-weight: 760;
+        line-height: 1.18;
+      }
+
+      .preview {
+        position: relative;
+        min-height: 370px;
+      }
+
+      .phone {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 244px;
+        height: 356px;
+        overflow: hidden;
+        border: 10px solid #fffdfb;
+        border-radius: 34px;
+        background: #31121e;
+        box-shadow: 0 32px 68px rgba(143, 41, 77, 0.22);
+      }
+
+      .phone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .float-card {
+        position: absolute;
+        left: 0;
+        width: 155px;
+        height: 198px;
+        overflow: hidden;
+        border: 8px solid #fffdfb;
+        border-radius: 24px;
+        background: #fff;
+        box-shadow: 0 24px 56px rgba(143, 41, 77, 0.18);
+        transform: rotate(-7deg);
+      }
+
+      .float-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .float-card.second {
+        left: 108px;
+        top: 152px;
+        width: 142px;
+        height: 174px;
+        transform: rotate(8deg);
+      }
+
+      .grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 50px;
+      }
+
+      .card {
+        min-height: 182px;
+        padding: 28px 30px;
+        border: 1px solid rgba(143, 41, 77, 0.14);
+        border-radius: 22px;
+        background: rgba(255, 253, 251, 0.74);
+        box-shadow: 0 20px 46px rgba(143, 41, 77, 0.1);
+      }
+
+      .card strong {
+        display: block;
+        margin-bottom: 10px;
+        color: #8f294d;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.04;
+      }
+
+      .card p {
+        margin: 0;
+        color: rgba(53, 25, 37, 0.76);
+        font-size: 22px;
+        font-weight: 720;
+        line-height: 1.24;
+      }
+
+      .value-row {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+        margin-top: 42px;
+      }
+
+      .comparison,
+      .student {
+        padding: 34px;
+        border-radius: 26px;
+      }
+
+      .comparison {
+        background: linear-gradient(135deg, #8f294d, #d94e7d 58%, #d4a15d);
+        color: #fffdfb;
+        box-shadow: 0 30px 65px rgba(143, 41, 77, 0.22);
+      }
+
+      .student {
+        border: 1px solid rgba(143, 41, 77, 0.16);
+        background: rgba(255, 253, 251, 0.82);
+      }
+
+      .comparison h2,
+      .student h2 {
+        margin: 0 0 14px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 40px;
+        font-weight: 560;
+        line-height: 1;
+      }
+
+      .comparison p,
+      .student p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 740;
+        line-height: 1.22;
+      }
+
+      .comparison .range {
+        display: block;
+        margin: 10px 0 12px;
+        font-size: 52px;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      .student h2 {
+        color: #8f294d;
+      }
+
+      .student p {
+        color: rgba(53, 25, 37, 0.78);
+      }
+
+      .closing {
+        position: relative;
+        z-index: 1;
+        margin-top: 40px;
+        padding: 34px 38px;
+        border-radius: 28px;
+        background: #351925;
+        color: #fffdfb;
+        box-shadow: 0 28px 68px rgba(49, 18, 30, 0.2);
+      }
+
+      .closing h2 {
+        margin: 0 0 12px;
+        color: #f5d7a6;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 42px;
+        font-weight: 560;
+      }
+
+      .closing p {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 720;
+        line-height: 1.24;
+      }
+
+      .footnote {
+        position: relative;
+        z-index: 1;
+        margin: 28px 0 0;
+        color: rgba(53, 25, 37, 0.62);
+        font-size: 17px;
+        font-weight: 760;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <section class="top">
+        <img class="logo" src="/generated/menails-wordmark-flow.webp" alt="Me Nails & More" />
+        <div class="price-tag">
+          <span>Reduced student rate</span>
+          <strong>$1,500</strong>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Advisor summary</p>
+          <h1>Why this website is worth the investment.</h1>
+          <p class="lead">
+            This is not just a pretty page. It gives Me Nails & More a real home online where people can
+            book, call, find the salon, and choose services without needing to message back and forth.
+          </p>
+        </div>
+        <div class="preview" aria-hidden="true">
+          <div class="float-card"><img src="/instagram-gallery/menails-instagram-04.webp" alt="" /></div>
+          <div class="float-card second"><img src="/instagram-gallery/menails-instagram-11.webp" alt="" /></div>
+          <div class="phone"><img src="/store-hero.webp" alt="" /></div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <strong>Turn 17,000 followers into appointments.</strong>
+          <p>
+            Instagram gets attention. The website turns that attention into action with one clear place to
+            book, call, text, and see services.
+          </p>
+        </article>
+        <article class="card">
+          <strong>Custom booking flow.</strong>
+          <p>
+            Clients can choose a technician, date, and time slot. That means fewer lost messages and an
+            easier path from interest to appointment.
+          </p>
+        </article>
+        <article class="card">
+          <strong>Built to bring in customers.</strong>
+          <p>
+            The page is designed so the most important buttons are easy to find: Book Now, Call, Text, Get
+            Directions, Instagram, and TikTok.
+          </p>
+        </article>
+        <article class="card">
+          <strong>Better chance to show up on Google.</strong>
+          <p>
+            The site clearly shows the salon name, services, address, phone number, hours, reviews, and
+            location, which helps customers find them when searching nearby.
+          </p>
+        </article>
+      </section>
+
+      <section class="value-row">
+        <div class="comparison">
+          <h2>What this normally costs</h2>
+          <span class="range">$6,000-$15,000+</span>
+          <p>
+            A custom local business website with many sections, booking features, reviews, images, mobile
+            design, and search-ready content is usually priced far above $1,500.
+          </p>
+        </div>
+        <div class="student">
+          <h2>Why the price is lower</h2>
+          <p>
+            The quality is not reduced. The reduced price is because I am a full-time student and I want to
+            help strong local businesses get a website that would normally cost much more.
+          </p>
+        </div>
+      </section>
+
+      <section class="closing">
+        <h2>Clear communication, built from scratch.</h2>
+        <p>
+          I program the website from the ground up, so changes are possible. If they want different text,
+          new pictures, more booking options, more service pages, extra sections, or future features, we can
+          keep building on it instead of being stuck with a limited template.
+        </p>
+      </section>
+
+      <p class="footnote">
+        Cost comparison is based on common 2026 small-business web pricing ranges: many professional
+        5-15 page sites are listed around $2,000-$15,000, and larger custom local-business builds with more
+        content and booking features can reasonably land higher. This offer is intentionally reduced for a
+        local business relationship.
+      </p>
+    </main>
+  </body>
+</html>

@@ -162,11 +162,6 @@ export default function BookingSection() {
           </select>
         </div>
 
-        <div className="booking-summary" aria-live="polite">
-          <span>Request preview</span>
-          <p>{message}</p>
-        </div>
-
         <div className="booking-actions">
           <a className="primary-link" href={smsHref}>
             <Send className="site-icon" aria-hidden="true" />

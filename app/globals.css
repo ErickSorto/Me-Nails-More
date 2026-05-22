@@ -1893,8 +1893,7 @@ a {
   gap: 8px;
 }
 
-.booking-field label,
-.booking-summary span {
+.booking-field label {
   color: var(--rose);
   font-size: 0.72rem;
   font-weight: 900;
@@ -1922,23 +1921,6 @@ a {
   border-color: rgba(143, 41, 77, 0.46);
   background: #fff;
   box-shadow: 0 0 0 4px rgba(217, 78, 125, 0.1);
-}
-
-.booking-summary {
-  grid-column: 1 / -1;
-  display: grid;
-  gap: 8px;
-  border: 1px solid rgba(143, 41, 77, 0.12);
-  border-radius: 8px;
-  padding: 14px;
-  background: rgba(255, 241, 244, 0.62);
-}
-
-.booking-summary p {
-  margin: 0;
-  color: var(--ink-soft);
-  font-weight: 760;
-  line-height: 1.55;
 }
 
 .booking-actions {
